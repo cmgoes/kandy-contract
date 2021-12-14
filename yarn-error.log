@@ -1,0 +1,66 @@
+Arguments: 
+  /home/osboxes/.nvm/versions/node/v14.18.1/bin/node /usr/share/yarn/bin/yarn.js
+
+PATH: 
+  /Documents/slither:/home/osboxes/.nvm/versions/node/v14.18.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/Documents/slither
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  14.18.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: unexpected end of file
+      at Zlib.zlibOnError [as onerror] (zlib.js:187:17)
+
+npm manifest: 
+  {
+    "name": "olympus-contracts",
+    "version": "1.0.0",
+    "description": "Smart Contracts for Olympus",
+    "directories": {
+      "test": "test"
+    },
+    "dependencies": {
+      "@openzeppelin/contracts": "^3.4.0"
+    },
+    "devDependencies": {
+      "@nomiclabs/hardhat-ethers": "^2.0.2",
+      "@nomiclabs/hardhat-waffle": "^2.0.1",
+      "@openzeppelin/test-helpers": "^0.5.12",
+      "chai": "^4.3.4",
+      "ethereum-waffle": "^3.4.0",
+      "ethers": "^5.4.1",
+      "hardhat": "^2.5.0",
+      "prettier": "^2.3.2",
+      "prettier-plugin-solidity": "^1.0.0-beta.17",
+      "solhint": "^3.3.6",
+      "solhint-plugin-prettier": "0.0.5"
+    },
+    "scripts": {
+      "test": "npx hardhat test",
+      "compile": "npx hardhat compile",
+      "clean": "npx hardhat clean",
+      "start": "npx hardhat run scripts/deployAll.js",
+      "start:fuji": "npx hardhat run --network fuji scripts/deploy.js",
+      "start:fujilp": "npx hardhat run --network fuji scripts/deploy_lp.js",
+      "start:joe": "npx hardhat run --network fuji scripts/deployJoe.js",
+      "lint:sol": "solhint -f table contracts/**/*.sol"
+    },
+    "repository": {
+      "type": "git",
+      "url": ""
+    },
+    "author": "",
+    "homepage": ""
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
